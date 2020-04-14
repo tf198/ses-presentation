@@ -4,11 +4,11 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>VICSES Presentation</title>
 
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/ses.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/monokai.css">
@@ -24,9 +24,23 @@
 	</head>
 	<body>
 		<div class="reveal">
+			<div class="footer"></div>
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section class="cover-page">
+					<h1>A Sample<br/>Presentation</h1>
+					<p>Using reveal.js</p>
+				</section>
+				<section>
+					<img class="plain" src="images/values.jpg"/>
+				</section>
+				<section data-markdown>
+					## First slide
+
+					* Bullet points?
+					* How many?
+
+					Lets make something **very clear**
+				</section>
 			</div>
 		</div>
 
@@ -38,6 +52,7 @@
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
 				hash: true,
+				center: false,
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
